@@ -14,6 +14,10 @@
 
 3b) project horizontal runup line onto MOPS vertical elevation
 
+======= i2Rgus =====
+
+.pix files were placed in arguseyes/build folder
+and .xml file is what is executed by the crontab
 
 ======= Segmentation Gym =====
 
