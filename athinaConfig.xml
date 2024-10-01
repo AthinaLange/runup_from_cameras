@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<opencv_storage>
+
+<!-- Run Settings -->
+<StationName>CACO03</StationName>
+<DisplayOn>0</DisplayOn> <!-- 1 or 0 for on/off -->
+<RecordTime>600</RecordTime> <!-- In seconds -->
+
+<!-- Image Output Settings -->
+<OutputDirectory>/mnt/I2Rgus_Data/RawImages</OutputDirectory> 
+<SaveRawImages>0</SaveRawImages> <!-- 1 or 0 for on/off -->
+<!--AlignTo>"Minute"</AlignTo-->
+<AlignTo>"HalfHour"</AlignTo>
+<!--AlignTo>"Hour"</AlignTo-->
+<ImageFileSettings>
+	<PixelType>"RGB"</PixelType>
+	<!--PixelType>"Bayer"</PixelType--> 
+	<OutputBitDepth>8</OutputBitDepth>
+	<ImageFileType>"TIFF"</ImageFileType> <!-- JPG or TIFF for file type -->
+</ImageFileSettings>
+
+<!-- Image Product Settings -->
+<GenerateProducts>1</GenerateProducts> <!-- 1 or 0 for on/off -->
+<ImageProductSettings>
+	<ImageProductsDirectory>/mnt/I2Rgus_Data/ImageProducts</ImageProductsDirectory> 
+	<ProductFileType>"JPG"</ProductFileType> <!-- JPG or TIFF for file type -->
+	<DarkImage>1</DarkImage> <!-- 1 or 0 for generate dark image or not -->
+	<BrightImage>1</BrightImage> 
+	<TimexImage>1</TimexImage> 
+	<VarianceImage>1</VarianceImage>
+	<TimeStacks>1</TimeStacks>
+</ImageProductSettings>
+
+<!-- Camera Settings -->
+<Camera1>
+	<CameraType>BlackFlyS</CameraType>
+	<CameraName>c1</CameraName> <!-- Determines File Name -->
+	<!--PixelFormat>"BayerRG16"</PixelFormat-->
+	<PixelFormat>"BayerRG8"</PixelFormat>
+	<Width>2448</Width>
+	<Height>2048</Height>
+	<OffsetX>0</OffsetX>
+	<OffsetY>0</OffsetY>
+	<FrameRate>2</FrameRate> <!-- 0 for HW Trigger -->
+	<AutoExposureMode>1</AutoExposureMode> <!-- 1 or 0 for on/off -->
+	<!--<ExposureTime>2000</ExposureTime>-->  <!-- In microsecond -->
+	<!--<SamplePixFile>/home/i2r/Bitbucket/source/arguseyes_internal/sample.pix</SamplePixFile>--> 
+	<SamplePixFile>c1_timestack.pix</SamplePixFile>
+</Camera1>
+
+<Camera2>
+	<CameraType>BlackFlyS</CameraType>
+	<CameraName>c2</CameraName> <!-- Determines File Name -->
+	<!--PixelFormat>"BayerRG16"</PixelFormat-->
+	<PixelFormat>"BayerRG8"</PixelFormat>
+	<Width>2448</Width>
+	<Height>2048</Height>
+	<OffsetX>0</OffsetX>
+	<OffsetY>0</OffsetY>
+	<FrameRate>2</FrameRate> <!-- 0 for HW Trigger -->
+	<AutoExposureMode>1</AutoExposureMode> <!-- 1 or 0 for on/off -->
+	<!--<ExposureTime>2000</ExposureTime>-->  <!-- In microsecond -->
+	<!--<SamplePixFile>/home/i2r/Bitbucket/source/arguseyes_internal/sample.pix</SamplePixFile>-->
+	<SamplePixFile>c2_timestack.pix</SamplePixFile> 
+</Camera2>
+
+<!--Camera3-->
+	<CameraType>BlackFlyS</CameraType>
+	<CameraName>CameraC</CameraName> <!-- Determines File Name -->
+	<!--PixelFormat>"BayerRG16"</PixelFormat-->
+	<PixelFormat>"BayerRG8"</PixelFormat>
+	<Width>2448</Width>
+	<Height>2048</Height>
+	<OffsetX>0</OffsetX>
+	<OffsetY>0</OffsetY>
+	<FrameRate>1</FrameRate> <!-- 0 for HW Trigger -->
+	<AutoExposureMode>1</AutoExposureMode> <!-- 1 or 0 for on/off -->
+	<!--<ExposureTime>2000</ExposureTime>-->  <!-- In microsecond -->
+	<SamplePixFile>/home/i2r/Bitbucket/source/arguseyes_internal/sample.pix</SamplePixFile> 
+<!--/Camera3-->
+</opencv_storage>
+
